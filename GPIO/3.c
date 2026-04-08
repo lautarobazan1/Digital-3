@@ -29,7 +29,7 @@ int main(void){
 }
 
 void cfgPort(){
-    //configurar p0.0=p0.4 como GPIO
+    //Configuro P0.0 - P0.4 como GPIO
     LPC_PINCON->PINSEL0 &= ~(0x2FF);
     //LPC_PINCON->PINSEL0 &= ~( (3<<0) | (3<<2) | (3<<4) | (3<<6) | (3<<8) ); otra forma de configurar GPIO
 
